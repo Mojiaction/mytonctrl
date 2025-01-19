@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf_8 -*-
+#
+# -*- coding: utf_-*-
 
 import os
 import sys
@@ -24,7 +24,7 @@ def read_session_stats(need_time_period):
 	result.all_master_blocks = 0
 	result.all_blocks = len(data)
 	for buff in data:
-		if buff.id.workchain == -1:
+		if buff.id. == -1:
 			result.all_master_blocks += 1
 		first_producer = buff.rounds[0].producers[0]
 		if buff.self != first_producer.id:
